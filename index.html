@@ -25,6 +25,8 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
+    <!-- LIGHTBOX 2 -->
+    <link rel="stylesheet" href="./asset/css/lightbox.min.css" />
     <!-- MY CSS -->
     <link rel="stylesheet" href="./asset/css/style.css" />
     <title>
@@ -45,72 +47,135 @@
     <section class="services"></section>
     <!-- GALLERY -->
     <section class="gallery">
-      <section class="gallery">
-        <div class="container">
-          <div class="subtitle">OUR GALLERY</div>
-          <div class="title">Successful projects we've done</div>
-          <div class="gallery__photo">
-            <div class="row">
+      <div class="container">
+        <div class="subtitle">OUR GALLERY</div>
+        <div class="title">Successful projects we've done</div>
+        <div class="photos">
+          <div class="row">
+            <div class="photos__item col-lg-4">
               <a
-                class="col-lg-4"
+                class="photos__link"
                 href="./asset/img/gallery__icon-1.jpg"
                 data-lightbox="roadtrip"
+                data-title="Project 1"
               >
+                <div class="overlay">
+                  <div class="overlay__content">
+                    <h3 class="overlay__title">Project 1</h3>
+                    <p class="overlay__desc">
+                      Quisque ut lectus, eros et, sed commodo risus.
+                    </p>
+                  </div>
+                </div>
                 <img
-                  class="img-fluid"
+                  class="photos__img img-fluid"
                   src="./asset/img/gallery__icon-1.jpg"
                   alt=""
                 />
               </a>
+            </div>
+            <div class="photos__item col-lg-4">
               <a
-                class="col-lg-4"
+                class="photos__link"
                 href="./asset/img/gallery__icon-2.jpg"
                 data-lightbox="roadtrip"
+                data-title="Project 2"
               >
+                <div class="overlay">
+                  <div class="overlay__content">
+                    <h3 class="overlay__title">Project 2</h3>
+                    <p class="overlay__desc">
+                      Quisque ut lectus, eros et, sed commodo risus.
+                    </p>
+                  </div>
+                </div>
                 <img
                   class="img-fluid"
                   src="./asset/img/gallery__icon-2.jpg"
                   alt=""
                 />
               </a>
+            </div>
+            <div class="photos__item col-lg-4">
               <a
-                class="col-lg-4"
+                class="photos__link"
                 href="./asset/img/gallery__icon-3.jpg"
                 data-lightbox="roadtrip"
+                data-title="Project 3"
               >
+                <div class="overlay">
+                  <div class="overlay__content">
+                    <h3 class="overlay__title">Project 3</h3>
+                    <p class="overlay__desc">
+                      Quisque ut lectus, eros et, sed commodo risus.
+                    </p>
+                  </div>
+                </div>
                 <img
                   class="img-fluid"
                   src="./asset/img/gallery__icon-3.jpg"
                   alt=""
                 />
               </a>
-
+            </div>
+            <div class="photos__item col-lg-4 mt-4">
               <a
-                class="col-lg-4 mt-4"
+                class="photos__link"
                 href="./asset/img/gallery__icon-4.jpg"
                 data-lightbox="roadtrip"
+                data-title="Project 4"
               >
+                <div class="overlay">
+                  <div class="overlay__content">
+                    <h3 class="overlay__title">Project 4</h3>
+                    <p class="overlay__desc">
+                      Quisque ut lectus, eros et, sed commodo risus.
+                    </p>
+                  </div>
+                </div>
                 <img
                   class="img-fluid"
                   src="./asset/img/gallery__icon-4.jpg"
                   alt=""
                 />
               </a>
+            </div>
+            <div class="photos__item col-lg-4 mt-4">
               <a
-                class="col-lg-4 mt-4"
+                class="photos__link"
                 href="./asset/img/gallery__icon-5.jpg"
                 data-lightbox="roadtrip"
+                data-title="Project 5"
               >
+                <div class="overlay">
+                  <div class="overlay__content">
+                    <h3 class="overlay__title">Project 5</h3>
+                    <p class="overlay__desc">
+                      Quisque ut lectus, eros et, sed commodo risus.
+                    </p>
+                  </div>
+                </div>
                 <img
                   class="img-fluid"
                   src="./asset/img/gallery__icon-5.jpg"
                   alt=""
               /></a>
+            </div>
+            <div class="photos__item col-lg-4 mt-4">
               <a
-                class="col-lg-4 mt-4"
+                class="photos__link"
                 href="./asset/img/gallery__icon-6.jpg"
                 data-lightbox="roadtrip"
+                data-title="Project 6"
               >
+                <div class="overlay">
+                  <div class="overlay__content">
+                    <h3 class="overlay__title">Project 6</h3>
+                    <p class="overlay__desc">
+                      Quisque ut lectus, eros et, sed commodo risus.
+                    </p>
+                  </div>
+                </div>
                 <img
                   class="img-fluid"
                   src="./asset/img/gallery__icon-6.jpg"
@@ -119,30 +184,30 @@
               </a>
             </div>
           </div>
-          <div class="gallery__logo pt-5">
-            <div class="col-2">
-              <img class="img-fluid" src="./asset/img/logo-1.png" alt="" />
-            </div>
-            <div class="col-2">
-              <img class="img-fluid" src="./asset/img/logo-2.png" alt="" />
-            </div>
-            <div class="col-2">
-              <img class="img-fluid" src="./asset/img/logo-3.png" alt="" />
-            </div>
-            <div class="col-2">
-              <img class="img-fluid" src="./asset/img/logo-4.png" alt="" />
-            </div>
-            <div class="col-2">
-              <img class="img-fluid" src="./asset/img/logo-5.png" alt="" />
-            </div>
-            <!-- <img class="col-2" src="./asset/img/logo-1.png" alt="" />
+        </div>
+        <div class="gallery__logo pt-5">
+          <div class="col-2">
+            <img class="img-fluid" src="./asset/img/logo-1.png" alt="" />
+          </div>
+          <div class="col-2">
+            <img class="img-fluid" src="./asset/img/logo-2.png" alt="" />
+          </div>
+          <div class="col-2">
+            <img class="img-fluid" src="./asset/img/logo-3.png" alt="" />
+          </div>
+          <div class="col-2">
+            <img class="img-fluid" src="./asset/img/logo-4.png" alt="" />
+          </div>
+          <div class="col-2">
+            <img class="img-fluid" src="./asset/img/logo-5.png" alt="" />
+          </div>
+          <!-- <img class="col-2" src="./asset/img/logo-1.png" alt="" />
             <img class="col-2" src="./asset/img/logo-2.png" alt="" />
             <img class="col-2" src="./asset/img/logo-3.png" alt="" />
             <img class="col-2" src="./asset/img/logo-4.png" alt="" />
             <img class="col-2" src="./asset/img/logo-5.png" alt="" /> -->
-          </div>
         </div>
-      </section>
+      </div>
     </section>
     <!-- STATS -->
     <section class="stats"></section>
@@ -179,6 +244,7 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
-    <!--  -->
+    <!-- LIGHTBOX 2 -->
+    <script src="./asset/js/lightbox.min.js"></script>
   </body>
 </html>
