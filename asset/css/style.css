@@ -14,6 +14,8 @@
   --gray-chateau: #97a1a9;
   --dusty-gray: #999;
   --gallery: #eee;
+  --solitude-blue: #e9ecef;
+  --wild-sand: #f7f7f7;
   --athens-gray: #f8f9fa;
   --white: #fff;
 
@@ -94,12 +96,122 @@ a {
 .stats {
 }
 
-.stats .section-title {
-  margin-bottom: 24px;
+.stats .container {
+  padding: 50px 0;
+}
+
+.stats .row {
+  width: 100%;
+  margin: 0;
+}
+
+.stats img {
+  border-radius: var(--border-radius);
 }
 
 .stats__data {
   display: flex;
   flex-direction: column;
   gap: 30px;
+}
+
+.stats__subject {
+  width: 100%;
+}
+
+.stats__subject--marketing .subject {
+  width: 80%;
+}
+
+.stats__subject--responsive-web-design .subject {
+  width: 95%;
+}
+
+.stats__subject--analytics .subject {
+  width: 60%;
+}
+
+.stats__subject--web-development .subject {
+  width: 85%;
+}
+
+.stats__subject .subject {
+  font-size: 18px;
+  color: var(--teritary-clr);
+  margin-bottom: 10px;
+  font-weight: 400;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  margin-bottom: 10px;
+}
+
+.stats__subject .progress-bar,
+.stats__subject .progress-bar__background,
+.stats__subject .progress-bar__indicator {
+  width: 100%;
+  height: 4px;
+  background-color: var(--wild-sand);
+  font-size: 0.75rem;
+  border-radius: 0.25rem;
+  overflow: visible;
+  position: relative;
+}
+
+.stats__subject .progress-bar {
+  position: relative;
+}
+.stats__subject .progress-bar__background,
+.stats__subject .progress-bar__indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.stats__subject .progress-bar__indicator::before,
+.stats__subject .progress-bar__indicator::after {
+  content: "";
+  border-radius: 50%;
+  transform: translate(50%, 50%);
+  position: absolute;
+  right: 0;
+  bottom: 2px;
+}
+
+.stats__subject .progress-bar__indicator::before {
+  width: 28px;
+  height: 28px;
+  opacity: 0.3;
+  border: 1px solid;
+}
+
+.stats__subject .progress-bar__indicator::after {
+  width: 13px;
+  height: 13px;
+  border: 3px solid;
+  background-color: var(--white);
+}
+
+.stats__subject .progress-bar__indicator--80 {
+  width: 80%;
+  color: #61fded;
+  background: var(--progress-bar-clr-1);
+  z-index: 1;
+}
+
+.stats__subject .progress-bar__indicator--95 {
+  width: 95%;
+  color: #eece90;
+  background: var(--progress-bar-clr-2);
+}
+
+.stats__subject .progress-bar__indicator--60 {
+  width: 60%;
+  color: #5c51ff;
+  background: var(--progress-bar-clr-3);
+}
+
+.stats__subject .progress-bar__indicator--85 {
+  width: 85%;
+  color: #e5529a;
+  background: var(--progress-bar-clr-4);
 }
