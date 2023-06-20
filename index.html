@@ -8,20 +8,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="//fonts.googleapis.com/css2?family=Jost:wght@300;400;600&amp;display=swap"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
     <!-- FONT AWESOME 5 -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
       integrity="sha512-rqQltXRuHxtPWhktpAZxLHUVJ3Eombn3hvk9PHjV/N5DMUYnzKPC1i3ub0mEXgFzsaZNeJcoE0YHq0j/GFsdGg=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer" />
+      referrerpolicy="no-referrer"
+    />
     <!-- BOOTSTRAP -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-      crossorigin="anonymous" />
+      crossorigin="anonymous"
+    />
+    <!-- BACK TO TOP CSS -->
+    <!-- <link rel="stylesheet" href="./asset/css/back-to-top.css" /> -->
     <!-- MY CSS -->
     <link rel="stylesheet" href="./asset/css/style.css" />
     <title>
@@ -33,7 +38,9 @@
     <!-- HEADER -->
     <header></header>
     <!-- BANNER -->
-    <section class="banner"></section>
+    <section class="banner">
+      <i class="fa fa-linkedin"></i>
+    </section>
     <!-- ABOUT-US -->
     <section class="about-us"></section>
     <!-- CHALLENGES -->
@@ -51,29 +58,132 @@
     <!-- FOOTER -->
     <footer>
       <!-- FORM -->
-      <section class="form"></section>
+      <section class="form">
+        <div class="content container">
+          <div class="container-inner">
+            <div class="form__desc">
+              <h3 class="form__title">Let’s find out how to work together</h3>
+              <p class="text">
+                Lorem ipsum dolor sit amet elit. Velit beatae rem ullam dolore
+                nisi esse quasi, sit amet. Lorem ipsum dolor sit amet elit.
+              </p>
+            </div>
+            <form action class="subscribe">
+              <div class="subscribe__icon">
+                <span class="fa fa-paper-plane"></span>
+              </div>
+              <input type="text" placeholder="Your Email Address" />
+              <button class="btn btn-primary">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </section>
       <!-- SITEMAP -->
-      <section class="sitemap"></section>
+      <section class="sitemap">
+        <div class="container">
+          <div class="row">
+            <div class="item item-1 col-3">
+              <a class="corp-vision-logo">
+                <i class="fas fa-align-right logo-icon"></i>
+                Corp Vision
+                <span class="logo-text">Vision to your Future</span>
+              </a>
+              <p>
+                Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+                ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit
+                amet Semper at elit team advisors.
+              </p>
+              <div class="sitemap__social">
+                <a href="#!" class="facebook-logo">
+                  <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, id.</p> -->
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#!" class="twitter-logo">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#!" class="instagram-logo">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#!" class="linkedin-logo">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+            <div class="item item-2 col-3">
+              <div class="sitemap__header">CONTACT INFO</div>
+              <ul class="list">
+                <li class="list__item mb-2">
+                  <a href="">
+                    Address : Corp Vision, 343 marketing, #21 cravel 1st lane
+                    street, NY - 62617.
+                  </a>
+                </li>
+                <li class="list__item mb-2">
+                  <a href="">Phone Number : +1(21) 234 4567</a>
+                </li>
+                <li class="list__item mb-2">
+                  <a href="">Email : info@example.com</a>
+                </li>
+                <li class="list__item mb-2">
+                  <a href="">Support : info@support.com</a>
+                </li>
+              </ul>
+            </div>
+            <div class="item item-3 col-3">
+              <div class="sitemap__header">CATAGORIES</div>
+              <ul class="list">
+                <li class="list__item"><a href="">Marketing Strategy</a></li>
+                <li class="list__item"><a href="">Startup Business</a></li>
+                <li class="list__item"><a href="">Web Development</a></li>
+                <li class="list__item"><a href=""></a></li>
+              </ul>
+            </div>
+            <div class="item item-4 col-3">
+              <div class="sitemap__header">META</div>
+              <ul class="list">
+                <li class="list__item"><a href="">Log in</a></li>
+                <li class="list__item"><a href="">Entries feed</a></li>
+                <li class="list__item"><a href="">Comments feed</a></li>
+                <li class="list__item"><a href="">WordPress.org</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- COPYRIGHT -->
-      <section class="copyright"></section>
+      <section class="copyright">
+        <div class="container">
+          <p>
+            © 2023 Corp Vision All Rights Reserved | WordPress Theme by
+            <span>W3Layouts.</span>
+          </p>
+        </div>
+      </section>
     </footer>
 
+    <!-- BACK TO TOP -->
+    <a href="#" class="cd-top text-replace js-cd-top"></a>
     <!-- JQUERY -->
     <script
       src="https://code.jquery.com/jquery-3.7.0.min.js"
       integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous"
+    ></script>
     <!-- WAYPOINT -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"
       integrity="sha512-fHXRw0CXruAoINU11+hgqYvY/PcsOWzmj0QmcSOtjlJcqITbPyypc8cYpidjPurWpCnlB8VKfRwx6PIpASCUkQ=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"></script>
+      referrerpolicy="no-referrer"
+    ></script>
     <!-- BOOTSTRAP JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-      crossorigin="anonymous"></script>
-    <!--  -->
+      crossorigin="anonymous"
+    ></script>
+    <!-- BACK TO TOP -->
+    <script src="./asset/js/back-to-top/back-to-top.js"></script>
+    <script src="./asset/js/back-to-top/util.js"></script>
   </body>
 </html>
