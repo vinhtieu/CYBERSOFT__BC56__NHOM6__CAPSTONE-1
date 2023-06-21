@@ -34,7 +34,7 @@
 
 /* *GLOBAL* */
 
-html {
+body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -130,18 +130,20 @@ footer {
   background-image: url(../img/form__bg.png);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
   text-align: center;
 }
 .form .content {
-  padding: 48px 0px;
+  /* padding: 48px 0px; */
 }
 .form .container-inner {
-  width: 700px;
+  max-width: 700px;
   margin: auto;
 }
 
 .form__desc {
   margin-bottom: 3rem;
+  width: 100%;
 }
 
 .form__title {
@@ -150,6 +152,7 @@ footer {
   font-weight: 700;
   color: var(--white);
   margin-bottom: 1rem;
+  width: 100%;
 }
 
 .form .text {
@@ -271,13 +274,14 @@ footer {
 
 .copyright {
   color: var(--gray-chateau);
+  padding-block: 25px;
 }
 
 .copyright .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-block: 25px;
+  text-align: center;
 }
 
 .copyright p {
@@ -285,6 +289,7 @@ footer {
   font-size: 17px;
   letter-spacing: 0.5px;
   opacity: 1;
+  margin: 0;
 }
 .copyright span {
   color: var(--primary-clr);
@@ -330,4 +335,37 @@ footer {
 .cd-top--fade-out {
   /* reduce button opacity if user keeps scrolling */
   opacity: 0.5;
+}
+
+/* *RESPONSIVE* */
+
+@media screen and (max-width: 1079.98px) {
+  /* *FORM* */
+  .form__title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  /* *FORM* */
+  .sitemap__header {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+}
+
+@media screen and (max-width: 575.98px) {
+  /* *FORM* */
+}
+
+@media screen and (max-width: 567.98px) {
+  /* *FORM* */
+  .form__title {
+    font-size: 30px;
+    line-height: 38px;
+  }
 }
