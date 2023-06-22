@@ -23,7 +23,12 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-      crossorigin="anonymous" />
+      crossorigin="anonymous"
+    />
+
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="./asset/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./asset/css/owl.theme.default.min.css" />
     <!-- MY CSS -->
     <link rel="stylesheet" href="./asset/css/style.css" />
     <title>
@@ -278,7 +283,95 @@
       </div>
     </section>
     <!-- FEEDBACK -->
-    <section class="feedback"></section>
+    <section class="feedback">
+      <div class="container pt-lg-4 py-md-3 py-2">
+        <div class="subtitle">HAPPY CLIENTS FEEDBACK</div>
+        <div class="title">Reviews and Testimonials</div>
+
+        <div class="owl-carousel owl-theme">
+          <div class="owl-carousel__item">
+            <div class="container-inner">
+              <p>
+                Lorem ipsum dolor sit amet elit. Velit beatae laudantium
+                voluptate rem ullam dolore nisi voluptatibus esse quasi,
+                doloribus tempora. Dolores molestias adipisci dolo amet!.
+              </p>
+              <div class="user">
+                <figure class="user__avatar">
+                  <img
+                    src="./asset/img/testimonial__avatar-1.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </figure>
+                <div class="user__info">
+                  <span>John wilson</span>
+                  <span>Student</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="owl-carousel__item">
+            <div class="container-inner">
+              <p>
+                Lorem ipsum dolor sit amet elit. Velit beatae laudantium
+                voluptate rem ullam dolore nisi voluptatibus esse quasi,
+                doloribus tempora. Dolores molestias adipisci dolo amet!.
+              </p>
+              <div class="user">
+                <figure class="user__avatar">
+                  <img src="./asset/img/testimonial__avatar-2.jpg" alt="" />
+                </figure>
+                <div class="user__info">
+                  <span>Smith Johnson</span>
+                  <span>Student</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="owl-carousel__item">
+            <div class="container-inner">
+              <p>
+                Lorem ipsum dolor sit amet elit. Velit beatae laudantium
+                voluptate rem ullam dolore nisi voluptatibus esse quasi,
+                doloribus tempora. Dolores molestias adipisci dolo amet!.
+              </p>
+              <div class="user">
+                <figure class="user__avatar">
+                  <img
+                    src="./asset/img/testimonial__avatar-3.jpg"
+                    alt=""
+                    class="user__avatar"
+                  />
+                </figure>
+                <div class="user__info">
+                  <span>Roy Linderson</span>
+                  <span>Student</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="owl-carousel__item">
+            <div class="container-inner">
+              <p>
+                Lorem ipsum dolor sit amet elit. Velit beatae laudantium
+                voluptate rem ullam dolore nisi voluptatibus esse quasi,
+                doloribus tempora. Dolores molestias adipisci dolo amet!.
+              </p>
+              <div class="user">
+                <figure class="user__avatar">
+                  <img src="./asset/img/testimonial__avatar-3.jpg" alt="" />
+                </figure>
+                <div class="user__info">
+                  <span>Smith Johnson</span>
+                  <span>Student</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- NEWS -->
     <section class="news"></section>
     <!-- FOOTER -->
@@ -295,18 +388,40 @@
     <script
       src="https://code.jquery.com/jquery-3.7.0.min.js"
       integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous"
+    ></script>
     <!-- WAYPOINT -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"
       integrity="sha512-fHXRw0CXruAoINU11+hgqYvY/PcsOWzmj0QmcSOtjlJcqITbPyypc8cYpidjPurWpCnlB8VKfRwx6PIpASCUkQ=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"></script>
+      referrerpolicy="no-referrer"
+    ></script>
     <!-- BOOTSTRAP JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-      crossorigin="anonymous"></script>
-    <!--  -->
+      crossorigin="anonymous"
+    ></script>
+    <!-- OWL CAROUSEL -->
+    <script src="./asset/js/owl.carousel.min.js"></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 1,
+          },
+          1000: {
+            items: 1,
+          },
+        },
+      });
+    </script>
   </body>
 </html>
