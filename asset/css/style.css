@@ -105,7 +105,8 @@ a {
 }
 
 .feedback .owl-carousel .container-inner {
-  width: 900px;
+  max-width: 900px;
+  height: 100%;
   margin: auto;
   padding: 40px 30px;
   margin-bottom: 30px;
@@ -147,6 +148,7 @@ a {
   font-size: 20px;
   color: var(--secondary-clr);
 }
+
 .feedback
   .owl-carousel
   .owl-carousel__item
@@ -178,4 +180,28 @@ a {
   opacity: 1;
   background-color: var(--secondary-clr);
   transform: scale(1.5);
+}
+
+/* *RESPONSIVE* */
+
+@media screen and (max-width: 1079.98px) {
+  /* *FEEDBACK* */
+  .feedback .title {
+    font-size: 32px !important;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 414.98px) {
+  .feedback .title {
+    font-size: 26px !important;
+    line-height: 32px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .feedback .title {
+    font-size: 24px !important;
+    line-height: 30px;
+  }
 }
