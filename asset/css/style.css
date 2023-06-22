@@ -182,26 +182,3 @@ a {
   transform: scale(1.5);
 }
 
-/* *RESPONSIVE* */
-
-@media screen and (max-width: 1079.98px) {
-  /* *FEEDBACK* */
-  .feedback .title {
-    font-size: 32px !important;
-    line-height: 40px;
-  }
-}
-
-@media screen and (max-width: 414.98px) {
-  .feedback .title {
-    font-size: 26px !important;
-    line-height: 32px;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .feedback .title {
-    font-size: 24px !important;
-    line-height: 30px;
-  }
-}
