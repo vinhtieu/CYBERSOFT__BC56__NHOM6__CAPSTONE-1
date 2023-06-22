@@ -171,12 +171,6 @@ a {
   transform: scale(1.1);
 }
 
-.gallery__logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .gallery__logo .col-2,
 .gallery__logo .col-2 img {
   padding: 0 16px;
