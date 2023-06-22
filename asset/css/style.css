@@ -36,7 +36,7 @@
 
 /* *GLOBAL* */
 
-html {
+body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -103,6 +103,10 @@ a {
 .stats .row {
   width: 100%;
   margin: 0;
+}
+
+.stats__img {
+  margin: auto;
 }
 
 .stats img {
@@ -214,4 +218,34 @@ a {
   width: 85%;
   color: #e5529a;
   background: var(--progress-bar-clr-4);
+}
+
+/* *RESPONSIVE* */
+
+@media screen and (max-width: 1079.98px) {
+  .stats .title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 567.98px) {
+  .stats .title {
+    font-size: 30px;
+    line-height: 38px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .stats .title {
+    font-size: 26px;
+    line-height: 32px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .stats .title {
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
