@@ -88,6 +88,7 @@ ul {
   display: block;
   text-transform: capitalize;
   color: var(--white);
+  transition: all .5s;
 }
 
 .corp-vision-logo .logo-icon {
@@ -157,7 +158,7 @@ footer {
 
 .form .text {
   color: var(--gallery);
-  padding: 0 24px;
+  /* padding: 0 24px; */
 }
 
 .form .subscribe {
@@ -178,6 +179,8 @@ footer {
   background-color: rgba(0, 0, 0, 0.25);
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 0.25rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .form .subscribe span {
@@ -199,11 +202,13 @@ footer {
   border-left: none;
 }
 
-.form .content .subscribe button.btn {
+.form .subscribe button.btn {
   padding: 0 25px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 600;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .form .content .subscribe button.btn-primary {
@@ -367,5 +372,21 @@ footer {
   .form__title {
     font-size: 30px;
     line-height: 38px;
+  }
+}
+
+@media screen and (max-width: 414.98px) {
+  /* *FORM* */
+  .form__title {
+    font-size: 26px !important;
+    line-height: 32px;
+  }
+
+  .item .item-1 p, .item .list .list__item a {
+    font-size: 17px;
+  }
+
+  .corp-vision-logo {
+    font-size: 26px;
   }
 }
