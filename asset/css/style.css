@@ -34,7 +34,7 @@
 
 /* *GLOBAL* */
 
-html {
+body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -95,8 +95,8 @@ a {
   text-align: center;
 }
 
-.news .section-title {
-  margin-bottom: 49px;
+.news .title {
+  margin-bottom: 48px;
 }
 
 .news .cards .card {
@@ -108,9 +108,14 @@ a {
   /* background: lightblue; */
 }
 
+.news h3 {
+  margin: 0;
+}
+
 .news .cards .card__header {
   overflow: hidden;
   margin: 0;
+  width: 100%;
 }
 
 .news .cards .card img {
@@ -139,6 +144,7 @@ a {
   color: var(--dusty-gray);
   margin: 0;
   padding: 0;
+  line-height: 27px;
 }
 
 .news .cards .card__body .card__title {
@@ -147,7 +153,6 @@ a {
   line-height: 28px;
   font-weight: 600;
   color: var(--secondary-clr);
-  margin: 10px 0 0 0;
   transition: all 0.3s;
   cursor: pointer;
 }
@@ -181,4 +186,21 @@ a {
 
 .news .cards .card__date {
   margin-left: auto;
+}
+
+/* *RESPONSIVE* */
+
+@media screen and (max-width: 1079.98px) {
+  /* *NEWS* */
+  .news .title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 374.98px) {
+  .news .title {
+    font-size: 18px;
+    line-height: 26px;
+  }
 }
