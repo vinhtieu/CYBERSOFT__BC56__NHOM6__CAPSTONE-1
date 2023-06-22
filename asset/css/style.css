@@ -188,19 +188,3 @@ a {
   margin-left: auto;
 }
 
-/* *RESPONSIVE* */
-
-@media screen and (max-width: 1079.98px) {
-  /* *NEWS* */
-  .news .title {
-    font-size: 32px;
-    line-height: 40px;
-  }
-}
-
-@media screen and (max-width: 374.98px) {
-  .news .title {
-    font-size: 18px;
-    line-height: 26px;
-  }
-}
