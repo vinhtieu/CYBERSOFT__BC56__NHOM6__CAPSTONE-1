@@ -82,11 +82,18 @@ ul {
 
 .btn-primary {
   color: var(--white);
+  border: 0;
   background-color: var(--primary-clr);
 }
 
 .btn-primary:hover {
-  color:var(--white);
+  color: var(--white);
+  background-color: var(--primary-clr-200);
+  border-color: var(--primary-clr-100);
+}
+
+:not(.btn-check) + .btn:active {
+  color: var(--white);
   background-color: var(--primary-clr-200);
   border-color: var(--primary-clr-100);
 }
@@ -127,8 +134,6 @@ ul {
 .sitemap {
   padding-block: 48px;
 }
-
-
 
 /* *GALLERY* */
 
@@ -800,7 +805,6 @@ footer {
   visibility: visible;
   opacity: 1;
 }
-
 
 /* *RESPONSIVE* */
 
