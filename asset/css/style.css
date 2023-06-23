@@ -128,6 +128,8 @@ ul {
   padding-block: 48px;
 }
 
+
+
 /* *GALLERY* */
 
 .gallery {
@@ -799,10 +801,6 @@ footer {
   opacity: 1;
 }
 
-.cd-top--fade-out {
-  /* reduce button opacity if user keeps scrolling */
-  opacity: 0.5;
-}
 
 /* *RESPONSIVE* */
 
