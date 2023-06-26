@@ -1,6 +1,203 @@
+:root {
+  --primary-clr-100: #00732c;
+  --primary-clr-200: #008030;
+  --primary-clr: #009f4d;
+  --secondary-clr: #213364;
+  --teritary-clr: #3f3a64;
+  --cinder-500: #100f19;
+  --cinder-400: #151421;
+  --tundora: #404040;
+  --dove-gray: #666;
+  --gray: #7e7d7d;
+  --gray-chateau: #97a1a9;
+  --dusty-gray: #999;
+  --gallery: #eee;
+  --athens-gray: #f8f9fa;
+  --white: #fff;
+  --layer: rgba(29, 42, 55, 0.7);
+  --title-clr: var(--teritary-clr);
+  --subtitle-clr: var(--gray);
+  --text-clr: var(--dove-gray);
+  --form-text-clr: var(--gallery);
+  --footer-text-clr: var(--gray-chateau);
+  --progress-bar-clr-1: linear-gradient(-224deg, #0d8abc, #61fded);
+  --progress-bar-clr-2: linear-gradient(-224deg, #d45529, #eece90);
+  --progress-bar-clr-3: linear-gradient(-224deg, #f646a9, #5c51ff);
+  --progress-bar-clr-4: linear-gradient(-224deg, #e77654, #e5529a);
+  --border-radius: 8px;
+}
+
+.kc {
+  display: block;
+  width: 100%;
+  height: 8000px;
+
+}
+
 html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "Jost", sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: Jost, sans-serif;
+  color: var(--text-color);
+  margin: 0px;
+  padding: 0px;
+  background-color: #0d8abc;
+}
+
+.container {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+#btn-searchcr .btn-search {
+  line-height: 45px;
+  text-align: center;
+  width: 45px;
+  height: 45px;
+  background-color: var(--primary-clr);
+  transform-origin: 50% center;
+  color: var(--white);
+  border-radius: 100%;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+}
+
+.fa-solid,
+.fas {
+  font-weight: 900;
+}
+
+
+/* HEADER */
+header {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  z-index: 9;
+  border-bottom: 1px solid rgb(180, 180, 180);
+  transition: all 0.5s ease-in-out 0s;
+  padding: 20px 0px;
+}
+
+header #portNav .navbar-brand {
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+}
+
+header #portNav {
+  height: 60px;
+}
+
+header #portNav .navbar-brand i {
+  color: var(--primary-clr);
+  margin-right: -5px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  opacity: 0.8;
+  text-transform: uppercase;
+  transition: all 0.5s ease 0s;
+  padding: 14px 0px 10px;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-expand-lg .navbar-nav .nav-item {
+  padding: 0px 10px;
+}
+
+i.bi-moon,
+i.bi-brightness-high {
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  color: var(--white);
+  padding-left: 10px;
+}
+
+/* HEADER STICKY */
+
+header.sticky {
+  opacity: 0.9;
+  align-items: center;
+  background: rgb(255, 255, 255);
+  padding: 10px;
+}
+
+header.sticky .navbar-dark .navbar-nav .active>.nav-link {
+  color: var(--primary-clr);
+}
+
+header #portNav .navbar-brand .logo_bottom {
+  font-size: 0.9rem;
+  margin: 0px 0px 0px 50px;
+}
+
+
+
+header.sticky #portNav .navbar-brand,
+header.sticky .navbar-nav .nav-link,
+header.sticky i.bi-moon {
+  color: var(--secondary-clr);
+}
+
+body.dark header.sticky #portNav .navbar-brand,
+body.dark header.sticky .navbar-nav .nav-link {
+  color: var(--white);
+}
+
+/* BODY DARK MODE */
+body.dark {
+  background-color: var(--cinder-400);
+  color: white;
+}
+
+body.dark header.sticky {
+  background-color: var(--cinder-400);
+}
+
+
+/* BANNER */
+.banner-slide {
+  position: relative;
+  min-height: 800px;
+  padding-bottom: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  display: block;
+  background: var(--layer);
 }
