@@ -1,258 +1,377 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="//fonts.googleapis.com/css2?family=Jost:wght@300;400;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- FONT AWESOME 5 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+      integrity="sha512-rqQltXRuHxtPWhktpAZxLHUVJ3Eombn3hvk9PHjV/N5DMUYnzKPC1i3ub0mEXgFzsaZNeJcoE0YHq0j/GFsdGg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <!-- ANIMATION -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="./asset/css/style.css" />
+    <title>
+      Corpvision – Corporate Category Website WordPress Theme – Just another
+      W3Layouts free WordPress Demo Sites site
+    </title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- GOOGLE FONTS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="//fonts.googleapis.com/css2?family=Jost:wght@300;400;600&amp;display=swap" rel="stylesheet" />
-  <!-- FONT AWESOME 5 -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
-    integrity="sha512-rqQltXRuHxtPWhktpAZxLHUVJ3Eombn3hvk9PHjV/N5DMUYnzKPC1i3ub0mEXgFzsaZNeJcoE0YHq0j/GFsdGg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- BOOTSTRAP -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <!-- ANIMATION -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <!-- MY CSS -->
-  <link rel="stylesheet" href="./asset/css/style.css" />
-  <title>
-    Corpvision – Corporate Category Website WordPress Theme – Just another
-    W3Layouts free WordPress Demo Sites site
-  </title>
-</head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg" id="portNav">
+          <div class="navbar-cl">
+            <h1>
+              <a class="navbar-brand" href="#">
+                <span>
+                  <i class="fa-sharp fa-solid fa-align-right"></i>
+                  Corp Vision
+                </span>
+                <div class="logo_bottom">Vision to your Future</div>
+              </a>
+            </h1>
+            <button
+              class="navbar-toggler"
+              onclick="showmenu()"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span> <i class="fa icon-expand fa-bars"></i></span>
+              <span class="fa-solid fa-xmark"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav mx-lg-auto" id="primary-menu">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">about</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">services</a>
+              </li>
+              <li id="nidrop" class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  pages
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">blog posts</a>
+                  <a class="dropdown-item" href="#">404 page</a>
+                  <a class="dropdown-item" href="#">landing page</a>
+                  <a class="dropdown-item" href="#">elements page</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">contact</a>
+              </li>
+            </ul>
+            <!-- search -->
+            <div id="btn-searchcr">
+              <div class="btn-search" id="search-button">
+                <div class="btn-search__background">
+                  <i class="magnifying-glass-icon fa-solid fa-magnifying-glass"></i>
+                </div>
+                <input
+                  class="btn-search__input"
+                  name=""
+                  id=""
+                  placeholder="Start Typing"
+                />
+                <i class="close-icon fa fa-times"></i>
 
-<body>
-  <!-- HEADER -->
-  <header>
-    <div class="container">
-      <nav class="navbar navbar-expand-lg  " id="portNav">
-        <div class="navbar-cl">
-          <h1>
-            <a class="navbar-brand" href="#">
-              <span>
-                <i class="fa-sharp fa-solid fa-align-right "></i>
-                Corp Vision
-              </span>
-              <div class="logo_bottom">Vision to your Future</div>
-            </a>
-          </h1>
-          <button class="navbar-toggler" onclick="showmenu()" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
+                <!-- <div class="container">
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <div class=""></div>
+                  </div> -->
+              </div>
 
-            <span> <i class="fa icon-expand fa-bars"></i></span>
-            <span class="fa-solid fa-xmark"></span>
-
+              <div id="switchButton" title="Click to switch theme">
+                <i class="bi bi-moon"></i>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="kc"></div>
+    <!-- BANNER -->
+    <section id="banner">
+      <div
+        id="carouselExampleFade"
+        class="carousel slide carousel-fade"
+        data-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="banner-slide bg1">
+              <div class="container">
+                <div class="content">
+                  <h1
+                    class="animate__animated animate__flipInX animate__delay-1s"
+                  >
+                    We will solve your issues our vision to your future
+                  </h1>
+                  <p class="mt-4 animate__animated animate__fadeInDown">
+                    Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nisi
+                    ut ea.
+                  </p>
+                  <div
+                    class="cta-btn animate__animated animate__fadeInUp animate__delay-1s"
+                  >
+                    <a
+                      href="#url"
+                      class="btn btn-style btn-primary"
+                      tabindex="-1"
+                    >
+                      Learn More</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="overlay"></div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="banner-slide bg2">
+              <div class="container">
+                <div class="content">
+                  <h1
+                    class="animate__animated animate__fadeInDown animate__delay-1s"
+                  >
+                    Embracing success do our best, need best advice
+                  </h1>
+                  <p class="mt-4 animate__animated animate__fadeInDown">
+                    Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nisi
+                    ut ea.
+                  </p>
+                  <div
+                    class="cta-btn animate__animated animate__fadeInDown animate__delay-1s"
+                  >
+                    <a
+                      href="#url"
+                      class="btn btn-style btn-primary"
+                      tabindex="-1"
+                    >
+                      Get Started</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="overlay"></div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="banner-slide bg3">
+              <div class="container">
+                <div class="content">
+                  <h1
+                    class="animate__animated animate__fadeInUp animate__delay-1s"
+                  >
+                    Digital transformation driven by technology
+                  </h1>
+                  <p class="mt-4 animate__animated animate__fadeInUp">
+                    Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nisi
+                    ut ea.
+                  </p>
+                  <div
+                    class="cta-btn animate__animated animate__fadeInDown animate__delay-1s"
+                  >
+                    <a
+                      href="#url"
+                      class="btn btn-style btn-primary"
+                      tabindex="-1"
+                    >
+                      Learn More</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="overlay"></div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="banner-slide bg4">
+              <div class="container">
+                <div class="content">
+                  <h1
+                    class="animate__animated animate__flipInX animate__delay-1s"
+                  >
+                    For those who believe in leaving a mark
+                  </h1>
+                  <p class="mt-4 animate__animated animate__fadeInDown">
+                    Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nisi
+                    ut ea.
+                  </p>
+                  <div
+                    class="cta-btn animate__animated animate__fadeInUp animate__delay-1s"
+                  >
+                    <a
+                      href="#url"
+                      class="btn btn-style btn-primary"
+                      tabindex="-1"
+                    >
+                      Contact Now</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="overlay"></div>
+            </div>
+          </div>
+        </div>
+        <div class="btn-control">
+          <button
+            class="control carousel-control-prev"
+            data-target="#carouselExampleFade"
+            data-slide="prev"
+          >
+            <i class="icon-fa fa-solid fa-left-long"></i>
+          </button>
+          <button
+            class="control carousel-control-next"
+            data-target="#carouselExampleFade"
+            data-slide="next"
+          >
+            <i class="icon-fa fa-solid fa-right-long"></i>
           </button>
         </div>
-        <div class="collapse navbar-collapse" id="navbarContent">
-          <ul class="navbar-nav mx-lg-auto" id="primary-menu">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">about</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">services</a>
-            </li>
-            <li id="nidrop" class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                pages
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">blog posts</a>
-                <a class="dropdown-item" href="#">404 page</a>
-                <a class="dropdown-item" href="#">landing page</a>
-                <a class="dropdown-item" href="#">elements page</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">contact</a>
-            </li>
-          </ul>
-          <!-- search -->
-          <div id="btn-searchcr">
-            <div class="btn-search"><i class="fa-solid fa-magnifying-glass"></i></div>
-
-            <div id="switchButton" title="Click to switch theme">
-              <i class="bi bi-moon"></i>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </div>
-  </header>
-  <div class="kc"></div>
-  <!-- BANNER -->
-  <section id="banner">
-    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="banner-slide bg1 ">
-            <div class="container">
-              <div class="content">
-                <h1 class="animate__animated animate__flipInX animate__delay-1s">
-                  We will solve your issues our vision to your future</h1>
-                <p class="mt-4 animate__animated animate__fadeInDown">Lorem ipsum dolor sit amet, elit, sed do eiusmod
-                  ut labore
-                  et
-                  dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea. </p>
-                <div class="cta-btn animate__animated animate__fadeInUp animate__delay-1s">
-                  <a href="#url" class="btn btn-style btn-primary" tabindex="-1">
-                    Learn More</a>
-                </div>
-              </div>
-            </div>
-            <div class="overlay"></div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="banner-slide bg2">
-            <div class="container">
-              <div class="content">
-                <h1 class="animate__animated animate__fadeInDown animate__delay-1s">
-                  Embracing success do our best, need best advice </h1>
-                <p class="mt-4 animate__animated animate__fadeInDown">Lorem ipsum dolor sit amet, elit, sed do eiusmod
-                  ut labore
-                  et
-                  dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea. </p>
-                <div class="cta-btn animate__animated animate__fadeInDown animate__delay-1s">
-                  <a href="#url" class="btn btn-style btn-primary" tabindex="-1">
-                    Get Started</a>
-                </div>
-              </div>
-            </div>
-            <div class="overlay"></div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="banner-slide bg3">
-            <div class="container">
-              <div class="content">
-                <h1 class="animate__animated animate__fadeInUp animate__delay-1s">
-                  Digital transformation driven by technology </h1>
-                <p class="mt-4 animate__animated animate__fadeInUp">Lorem ipsum dolor sit amet, elit, sed do eiusmod
-                  ut labore
-                  et
-                  dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea. </p>
-                <div class="cta-btn animate__animated animate__fadeInDown animate__delay-1s">
-                  <a href="#url" class="btn btn-style btn-primary" tabindex="-1">
-                    Learn More</a>
-                </div>
-              </div>
-            </div>
-            <div class="overlay"></div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="banner-slide bg4">
-            <div class="container">
-              <div class="content">
-                <h1 class="animate__animated animate__flipInX animate__delay-1s">
-                  For those who believe in leaving a mark </h1>
-                <p class="mt-4 animate__animated animate__fadeInDown">Lorem ipsum dolor sit amet, elit, sed do eiusmod
-                  ut labore
-                  et
-                  dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea. </p>
-                <div class="cta-btn animate__animated animate__fadeInUp animate__delay-1s">
-                  <a href="#url" class="btn btn-style btn-primary" tabindex="-1">
-                    Contact Now</a>
-                </div>
-              </div>
-            </div>
-            <div class="overlay"></div>
-          </div>
-        </div>
       </div>
-      <div class="btn-control">
-        <button class="control carousel-control-prev" data-target="#carouselExampleFade" data-slide="prev">
-          <i class="icon-fa fa-solid fa-left-long"></i>
-        </button>
-        <button class="control carousel-control-next" data-target="#carouselExampleFade" data-slide="next">
-          <i class="icon-fa fa-solid fa-right-long"></i>
-        </button>
+      <div class="shape">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280">
+          <path fill-opacity="1">
+            <animate
+              attributeName="d"
+              dur="20000ms"
+              repeatCount="indefinite"
+              values="M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z; M0,160L48,181.3C96,203,192,245,288,234.7C384,224,480,160,576,133.3C672,107,768,117,864,138.7C960,160,1056,192,1152,197.3C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;												 M0,64L48,74.7C96,85,192,107,288,133.3C384,160,480,192,576,170.7C672,149,768,75,864,80C960,85,1056,171,1152,181.3C1248,192,1344,128,1392,96L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;
+            M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;"
+            ></animate>
+          </path>
+        </svg>
       </div>
-    </div>
-    <div class="shape">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280">
-        <path fill-opacity="1">
-          <animate attributeName="d" dur="20000ms" repeatCount="indefinite"
-            values="M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z; M0,160L48,181.3C96,203,192,245,288,234.7C384,224,480,160,576,133.3C672,107,768,117,864,138.7C960,160,1056,192,1152,197.3C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;												 M0,64L48,74.7C96,85,192,107,288,133.3C384,160,480,192,576,170.7C672,149,768,75,864,80C960,85,1056,171,1152,181.3C1248,192,1344,128,1392,96L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;
-            M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;">
-          </animate>
-        </path>
-      </svg>
-    </div>
-  </section>
-  <!-- ABOUT-US -->
-  <section class="about-us"></section>
-  <!-- CHALLENGES -->
-  <section class="challenges"></section>
-  <!-- SERVICES -->
-  <section class="services"></section>
-  <!-- GALLERY -->
-  <section class="gallery"></section>
-  <!-- STATS -->
-  <section class="stats"></section>
-  <!-- FEEDBACK -->
-  <section class="feedback"></section>
-  <!-- NEWS -->
-  <section class="news"></section>
-  <!-- FOOTER -->
-  <footer>
-    <!-- FORM -->
-    <section class="form"></section>
-    <!-- SITEMAP -->
-    <section class="sitemap"></section>
-    <!-- COPYRIGHT -->
-    <section class="copyright"></section>
-  </footer>
+    </section>
+    <!-- ABOUT-US -->
+    <section class="about-us"></section>
+    <!-- CHALLENGES -->
+    <section class="challenges"></section>
+    <!-- SERVICES -->
+    <section class="services"></section>
+    <!-- GALLERY -->
+    <section class="gallery"></section>
+    <!-- STATS -->
+    <section class="stats"></section>
+    <!-- FEEDBACK -->
+    <section class="feedback"></section>
+    <!-- NEWS -->
+    <section class="news"></section>
+    <!-- FOOTER -->
+    <footer>
+      <!-- FORM -->
+      <section class="form"></section>
+      <!-- SITEMAP -->
+      <section class="sitemap"></section>
+      <!-- COPYRIGHT -->
+      <section class="copyright"></section>
+    </footer>
 
-
-  <!-- JQUERY -->
-  <script src="https://code.jquery.com/jquery-3.7.0.min.js"
-    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-  <!-- HEADER SCROLL -->
-  <script>
-    $(document).ready(function () {
-      $(window).scroll(function () {
-        if ($(this).scrollTop()) {
-          $('header').addClass('sticky');
-        } else {
-          $('header').removeClass('sticky');
-        }
+    <!-- JQUERY -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <!-- HEADER SCROLL -->
+    <script>
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop()) {
+            $("header").addClass("sticky");
+          } else {
+            $("header").removeClass("sticky");
+          }
+        });
       });
-    });
-  </script>
-  <!-- WAYPOINT -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"
-    integrity="sha512-fHXRw0CXruAoINU11+hgqYvY/PcsOWzmj0QmcSOtjlJcqITbPyypc8cYpidjPurWpCnlB8VKfRwx6PIpASCUkQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- BOOTSTRAP JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-    crossorigin="anonymous"></script>
+    </script>
+    <!-- WAYPOINT -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"
+      integrity="sha512-fHXRw0CXruAoINU11+hgqYvY/PcsOWzmj0QmcSOtjlJcqITbPyypc8cYpidjPurWpCnlB8VKfRwx6PIpASCUkQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- BOOTSTRAP JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- JS -->
-  <script src="asset/js/main.js"></script>
-
-</body>
-
+    <!-- JS -->
+    <script src="asset/js/main.js"></script>
+  </body>
 </html>
