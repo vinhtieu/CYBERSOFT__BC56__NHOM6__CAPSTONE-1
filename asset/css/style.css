@@ -186,9 +186,17 @@ p {
     justify-content: space-between;
   }
 
+  body.showmenu .navbar-cl {
+    padding-top: 20px;
+  }
+
+  body.showmenu #btn-searchcr {
+    top: 30px;
+  }
+
   body.showmenu header {
     background: rgba(0, 0, 0, 0.7);
-    height:auto;
+    height: auto;
   }
 
   .navbar-expand-lg .navbar-collapse {
@@ -315,7 +323,7 @@ p {
     display: flex;
     align-items: center;
     position: absolute;
-    top: 22px;
+    top: 30px;
     right: 66px;
     transition: all 0.5s;
   }
