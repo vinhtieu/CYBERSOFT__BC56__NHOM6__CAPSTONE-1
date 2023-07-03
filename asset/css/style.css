@@ -48,6 +48,10 @@ a {
   text-decoration: none !important;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .kc {
   display: block;
   width: 100%;
@@ -122,11 +126,11 @@ p {
   color: var(--text-color);
   opacity: 0.8;
 }
-
+/*
 .btn-primary {
   color: var(--white);
   background-color: var(--primary-clr);
-}
+} */
 
 .about-us,
 .challenges,

@@ -168,4 +168,31 @@ body.dark .services .card .services_img:hover::after {
   color: var(--primary-clr);
 }
 
-/* *GALLERY* */
+/* *RYAN* */
+
+body.dark .news .cards .card {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.5s;
+  background: var(--cinder-400);
+}
+
+body.dark .news .cards .card__footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.5s;
+}
+
+body.dark .gallery,
+body.dark .feedback {
+  transition: all 0.5s;
+  background-color: var(--cinder-500);
+}
+
+body.dark .title,
+body.dark .stats .subject,
+body.dark .feedback .owl-carousel .owl-carousel__item .user .user__info span,
+body.dark .feedback p,
+body.dark .news .cards .card__body .card__title,
+body.dark .news .cards .card__text a {
+  transition: all 0.5s;
+  color: var(--white);
+}

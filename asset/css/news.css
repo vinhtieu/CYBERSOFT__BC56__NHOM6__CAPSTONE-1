@@ -114,6 +114,14 @@
   border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px);
 }
 
+.news .cards .card__footer > a {
+  overflow: hidden;
+  border-radius: 50%;
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
 .news .cards .card__text a {
   font-size: 16px;
   color: var(--secondary-clr);
@@ -123,10 +131,18 @@
   cursor: pointer;
 }
 
+.news .cards .card__text span {
+  color: #c2c2c2;
+  font-size: 15px;
+  font-weight: 600;
+  opacity: 0.6;
+}
+
 .news .cards .card__text a:hover {
   color: var(--primary-clr);
 }
 
 .news .cards .card__date {
+  color: #c2c2c2;
   margin-left: auto;
 }

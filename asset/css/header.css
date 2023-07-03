@@ -1,3 +1,36 @@
+:root {
+  /* *COLOR* */
+  --primary-clr-100: #00732c;
+  --primary-clr-200: #008030;
+  --primary-clr: #009f4d;
+  --secondary-clr: #213364;
+  --teritary-clr: #3f3a64;
+  --cinder-500: #100f19;
+  --cinder-400: #151421;
+  --tundora: #404040;
+  --dove-gray: #666;
+  --gray: #7e7d7d;
+  --gray-chateau: #97a1a9;
+  --dusty-gray: #999;
+  --gallery: #eee;
+  --athens-gray: #f8f9fa;
+  --white: #fff;
+  --title-clr: var(--teritary-clr);
+  --subtitle-clr: var(--gray);
+  --text-clr: var(--dove-gray);
+  --form-text-clr: var(--gallery);
+  --footer-text-clr: var(--gray-chateau);
+  --overlay: rgba(29, 42, 55, 0.7);
+
+  --progress-bar-clr-1: linear-gradient(-224deg, #0d8abc, #61fded);
+  --progress-bar-clr-2: linear-gradient(-224deg, #d45529, #eece90);
+  --progress-bar-clr-3: linear-gradient(-224deg, #f646a9, #5c51ff);
+  --progress-bar-clr-4: linear-gradient(-224deg, #e77654, #e5529a);
+
+  /* *OTHER* */
+  --border-radius: 8px;
+}
+
 /* *==========HEADER==========* */
 
 /* *HEADER* */
@@ -5,26 +38,45 @@ header {
   position: fixed;
   top: 0px;
   right: 0px;
+  height: 100px;
   width: 100%;
   z-index: 9;
   border-bottom: 1px solid rgb(180, 180, 180);
   transition: all 0.4s ease 0s;
-  padding: 5px 0;
+  display: grid;
+  align-items: center;
+  padding: 0;
 }
 
-header #portNav .navbar-brand {
+.navbar-brand {
   font-size: 32px;
   font-weight: bold;
   color: var(--white);
 }
 
-header #portNav {
-  height: auto;
-}
-
-header #portNav .navbar-brand i {
+.navbar-brand i {
   color: var(--primary-clr);
   margin-right: -5px;
+}
+
+.navbar-brand .logo_bottom {
+  font-size: 0.9rem;
+  margin: 0px 0px 0px 50px;
+}
+
+.navbar {
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-cl h1 {
+  margin: 0;
+}
+
+.navbar-brand {
+  margin: 0;
+  padding: 0;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -177,7 +229,7 @@ a.dropdown-item {
 
 .shape svg {
   width: 100%;
-  bottom: -54px;
+  bottom: 0;
   position: relative;
 }
 
@@ -278,11 +330,6 @@ header.sticky .navbar {
   align-items: stretch;
   margin-top: -10px;
   transition: all 0.5s;
-}
-
-header #portNav .navbar-brand .logo_bottom {
-  font-size: 0.9rem;
-  margin: 0px 0px 0px 50px;
 }
 
 header.sticky #portNav .navbar-brand,

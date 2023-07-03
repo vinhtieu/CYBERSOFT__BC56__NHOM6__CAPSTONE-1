@@ -116,21 +116,15 @@ footer {
   border-left: none;
 }
 
-.form .subscribe button.btn {
+.form .subscribe .btn {
   padding: 0 25px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 600;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-}
-
-.form .content .subscribe button.btn-primary {
-  color: var(--white);
-  background-color: var(--primary-clr);
-  border-color: var(--primary-clr);
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 .form .content .subscribe button.btn:hover {
@@ -141,7 +135,8 @@ footer {
 /* *SITEMAP* */
 
 .sitemap p,
-.sitemap .list a {
+.sitemap .list .list__item,
+.sitemap .list .list__item a {
   font-size: 18px;
   line-height: 28px;
   color: var(--gray-chateau);
@@ -152,16 +147,29 @@ footer {
   margin-bottom: 24px;
 }
 
-.sitemap__social a {
+.sitemap__social .list__item {
   margin-right: 15px;
   display: inline-block;
   text-align: center;
   font-size: 16px;
   background: none;
   border-radius: 50%;
-  transition: 0.3s;
+}
+
+.sitemap__social {
+  display: flex;
+  gap: 20px;
+}
+
+.sitemap__social a i {
   color: #97a1a9;
+  transition: 0.3s;
   opacity: 0.6;
+}
+
+.sitemap__social a:hover i {
+  color: #fff;
+  opacity: 1;
 }
 
 .sitemap__header {
@@ -187,6 +195,11 @@ footer {
 .sitemap .row .item-3 .list .list__item,
 .sitemap .row .item-4 .list .list__item {
   margin-bottom: 10px;
+}
+
+.sitemap .list .list__item:hover a {
+  opacity: 1;
+  color: var(--white);
 }
 
 /* *COPYRIGHT* */
@@ -239,10 +252,11 @@ footer {
   align-items: center;
   justify-content: center;
   visibility: hidden;
-  background: url(../img/cd-top-arrow.svg) no-repeat center 50%
+  background: url(/asset/img/cd-top-arrow.svg) no-repeat center 50%
     var(--primary-clr);
   opacity: 0;
   transition: opacity 0.3s, visibility 0.3s, background-color 0.3s;
+  z-index: 12;
 }
 
 .cd-top--is-visible {
@@ -253,5 +267,5 @@ footer {
 
 .cd-top--fade-out {
   /* reduce button opacity if user keeps scrolling */
-  opacity: 0.5;
+  /* opacity: 0.5; */
 }

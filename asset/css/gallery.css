@@ -35,7 +35,7 @@
 
 .gallery {
   text-align: center;
-  background-color: var(--athens-gray);
+  background: var(--athens-gray);
 }
 
 .gallery .container {
@@ -91,6 +91,7 @@
 }
 
 .overlay__desc {
+  color: var(--gallery);
   font-size: 18px;
 }
 
@@ -98,7 +99,7 @@
   transition: all 0.3s ease-in-out;
 }
 
-.photos__item:hover .overlay {
+.photos__item:hover .overlay-gallery {
   opacity: 1;
 }
 

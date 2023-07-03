@@ -546,7 +546,7 @@
                   </div>
                 </div>
                 <img
-                  class="img-fluid"
+                  class="photos__img img-fluid"
                   src="./asset/img/gallery__icon-2.jpg"
                   alt=""
                 />
@@ -568,7 +568,7 @@
                   </div>
                 </div>
                 <img
-                  class="img-fluid"
+                  class="photos__img img-fluid"
                   src="./asset/img/gallery__icon-3.jpg"
                   alt=""
                 />
@@ -590,7 +590,7 @@
                   </div>
                 </div>
                 <img
-                  class="img-fluid"
+                  class="photos__img img-fluid"
                   src="./asset/img/gallery__icon-4.jpg"
                   alt=""
                 />
@@ -612,7 +612,7 @@
                   </div>
                 </div>
                 <img
-                  class="img-fluid"
+                  class="photos__img img-fluid"
                   src="./asset/img/gallery__icon-5.jpg"
                   alt=""
               /></a>
@@ -633,7 +633,7 @@
                   </div>
                 </div>
                 <img
-                  class="img-fluid"
+                  class="photos__img img-fluid"
                   src="./asset/img/gallery__icon-6.jpg"
                   alt=""
                 />
@@ -837,7 +837,11 @@
                 <div class="card__title">Hello World!</div>
               </div>
               <div class="card__footer">
-                <img src="./asset\img\w3-layout-logo.jpeg" class="card__logo" />
+                <a
+                  ><img
+                    src="./asset\img\w3-layout-logo.jpeg"
+                    class="card__logo"
+                /></a>
                 <div class="card__text">
                   <span>by</span>
                   <a>W3Layouts</a>
@@ -863,7 +867,11 @@
                 </a>
               </div>
               <div class="card__footer">
-                <img src="./asset/img/w3-layout-logo.jpeg" class="card__logo" />
+                <a
+                  ><img
+                    src="./asset/img/w3-layout-logo.jpeg"
+                    class="card__logo"
+                /></a>
                 <div class="card__text">
                   <span>by</span>
                   <a>W3Layouts</a>
@@ -886,7 +894,11 @@
                 </div>
               </div>
               <div class="card__footer">
-                <img src="./asset\img\w3-layout-logo.jpeg" class="card__logo" />
+                <a
+                  ><img
+                    src="./asset\img\w3-layout-logo.jpeg"
+                    class="card__logo"
+                /></a>
                 <div class="card__text">
                   <span>by</span>
                   <a>W3Layouts</a>
@@ -918,7 +930,7 @@
                 <span class="fa fa-paper-plane"></span>
               </div>
               <input type="text" placeholder="Your Email Address" />
-              <button class="btn btn-primary">Subscribe</button>
+              <button class="btn btn-primary btn-style">Subscribe</button>
             </form>
           </div>
         </div>
@@ -928,10 +940,12 @@
         <div class="container">
           <div class="row">
             <div class="item item-1 col-sm-12 col-md-6 col-lg-4">
-              <a class="corp-vision-logo">
-                <i class="fas fa-align-right logo-icon"></i>
-                Corp Vision
-                <span class="logo-text">Vision to your Future</span>
+              <a class="navbar-brand" href="#">
+                <span>
+                  <i class="fa-sharp fa-solid fa-align-right"></i>
+                  Corp Vision
+                </span>
+                <div class="logo_bottom">Vision to your Future</div>
               </a>
               <p>
                 Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
@@ -960,19 +974,23 @@
               <div class="sitemap__header">CONTACT INFO</div>
               <ul class="list">
                 <li class="list__item mb-2">
+                  Address :
                   <a href="">
-                    Address : Corp Vision, 343 marketing, #21 cravel 1st lane
-                    street, NY - 62617.
+                    Corp Vision, 343 marketing, #21 cravel 1st lane street, NY -
+                    62617.
                   </a>
                 </li>
                 <li class="list__item mb-2">
-                  <a href="">Phone Number : +1(21) 234 4567</a>
+                  Phone Number :
+                  <a href="">+1(21) 234 4567</a>
                 </li>
                 <li class="list__item mb-2">
-                  <a href="">Email : info@example.com</a>
+                  Email :
+                  <a href="">info@example.com</a>
                 </li>
                 <li class="list__item mb-2">
-                  <a href="">Support : info@support.com</a>
+                  Support :
+                  <a href="">info@support.com</a>
                 </li>
               </ul>
             </div>
@@ -1014,24 +1032,7 @@
 
     <!-- BACK TO TOP -->
     <a href="#" class="cd-top text-replace js-cd-top"></a>
-    <!-- JQUERY -->
-    <script
-      src="https://code.jquery.com/jquery-3.7.0.min.js"
-      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
-      crossorigin="anonymous"
-    ></script>
-    <!-- HEADER SCROLL -->
-    <script>
-      $(document).ready(function () {
-        $(window).scroll(function () {
-          if ($(this).scrollTop()) {
-            $("header").addClass("sticky");
-          } else {
-            $("header").removeClass("sticky");
-          }
-        });
-      });
-    </script>
+
     <!-- WAYPOINT -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"
@@ -1055,6 +1056,26 @@
       integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
       crossorigin="anonymous"
     ></script>
+
+    <!-- JQUERY -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- HEADER SCROLL -->
+    <script>
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop()) {
+            $("header").addClass("sticky");
+          } else {
+            $("header").removeClass("sticky");
+          }
+        });
+      });
+    </script>
 
     <!-- OWL CAROUSEL -->
     <script src="./asset/js/owl.carousel.min.js"></script>
