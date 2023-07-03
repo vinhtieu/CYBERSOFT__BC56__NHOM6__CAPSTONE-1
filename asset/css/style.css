@@ -157,17 +157,34 @@ p {
 
 /* *RESPONSIVE* */
 
+@media (max-width: 1280px) {
+  .shape svg {
+    width: 100%;
+    bottom: -72px;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 1079.98px) {
+  /* *GLOBAL* */
+
+  .title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+}
+
 @media only screen and (max-width: 991.98px) {
+  /* *HEADER* */
   .navbar-cl {
     display: flex;
     align-items: center;
     width: 100%;
     justify-content: space-between;
   }
-
-  /* header {
-    height: auto;
-  } */
 
   body.showmenu header {
     background: rgba(0, 0, 0, 0.7);
@@ -345,6 +362,8 @@ p {
     top: 40px;
     right: -30px;
   }
+  dsf
+  /* *SERVICES* */
 
   .services .row {
     width: calc(360px * 2);
@@ -366,6 +385,12 @@ p {
 
   .services .card .services_img::after {
     width: 85%;
+  }
+
+  /* *FORM* */
+  .sitemap__header {
+    margin-bottom: 20px;
+    font-size: 20px;
   }
 }
 
@@ -449,6 +474,41 @@ p {
   }
 }
 
+@media screen and (max-width: 567.98px) {
+  /* *FORM* */
+  .title {
+    font-size: 30px;
+    line-height: 38px;
+  }
+}
+
+@media screen and (max-width: 414.98px) {
+  /* *GLOBAL* */
+
+  .title {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  .item .item-1 p,
+  .item .list .list__item a {
+    font-size: 17px;
+  }
+
+  .corp-vision-logo {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  /* *GLOBAL* */
+
+  .title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
 @media screen and (max-width: 349.98px) {
   .about {
     margin: 300px 0;
@@ -517,13 +577,5 @@ p {
 @media (min-width: 1280px) {
   .content h1 {
     font-size: 65px;
-  }
-}
-
-@media (max-width: 1280px) {
-  .shape svg {
-    width: 100%;
-    bottom: -72px;
-    position: relative;
   }
 }

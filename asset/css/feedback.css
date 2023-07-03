@@ -54,6 +54,7 @@
   margin-bottom: 30px;
 }
 .feedback .owl-carousel .owl-carousel__item p {
+  color: #c2c2c2;
   font-size: 18px;
   line-height: 28px;
   opacity: 0.8;

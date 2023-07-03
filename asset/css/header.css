@@ -74,9 +74,17 @@ header {
   margin: 0;
 }
 
+.navbar-cl h1 a {
+  margin-block: auto;
+}
+
 .navbar-brand {
   margin: 0;
   padding: 0;
+}
+
+.navbar-brand:hover {
+  color: var(--white);
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
