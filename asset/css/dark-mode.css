@@ -1,0 +1,171 @@
+:root {
+  /* *COLOR* */
+  --primary-clr-100: #00732c;
+  --primary-clr-200: #008030;
+  --primary-clr: #009f4d;
+  --secondary-clr: #213364;
+  --teritary-clr: #3f3a64;
+  --cinder-500: #100f19;
+  --cinder-400: #151421;
+  --tundora: #404040;
+  --dove-gray: #666;
+  --gray: #7e7d7d;
+  --gray-chateau: #97a1a9;
+  --dusty-gray: #999;
+  --gallery: #eee;
+  --athens-gray: #f8f9fa;
+  --white: #fff;
+  --title-clr: var(--teritary-clr);
+  --subtitle-clr: var(--gray);
+  --text-clr: var(--dove-gray);
+  --form-text-clr: var(--gallery);
+  --footer-text-clr: var(--gray-chateau);
+  --overlay: rgba(29, 42, 55, 0.7);
+
+  --progress-bar-clr-1: linear-gradient(-224deg, #0d8abc, #61fded);
+  --progress-bar-clr-2: linear-gradient(-224deg, #d45529, #eece90);
+  --progress-bar-clr-3: linear-gradient(-224deg, #f646a9, #5c51ff);
+  --progress-bar-clr-4: linear-gradient(-224deg, #e77654, #e5529a);
+
+  /* *OTHER* */
+  --border-radius: 8px;
+}
+
+/* *==========DARK MODE==========* */
+
+body.dark {
+  background-color: var(--cinder-400);
+  color: var(--white);
+  transition: all 0.5s;
+}
+
+/* *HEADER* */
+
+body.dark .navbar-nav .dropdown-menu:before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: var(--cinder-400);
+  display: block;
+  border-top: 1px solid var(--dove-gray);
+  border-left: 1px solid var(--dove-gray);
+  transform: translateX(-50%) rotateZ(45deg);
+  position: absolute;
+  top: -7px;
+  left: 49%;
+  z-index: 1001;
+}
+
+body.dark .navbar-nav .dropdown-menu {
+  transform: translateX(-50px);
+  background: var(--cinder-400);
+  border: 1px solid var(--dove-gray);
+  opacity: 100;
+  width: 190px;
+  border-radius: 10px;
+}
+
+body.dark a.dropdown-item {
+  font-size: 15px;
+  color: var(--white);
+  background: none;
+  opacity: 0.8;
+  font-weight: 600;
+  padding: 7px 20px;
+  text-transform: uppercase;
+}
+
+body.dark header.sticky {
+  background-color: var(--cinder-400);
+}
+
+body.dark header.sticky .navbar-nav .active > .nav-link {
+  color: var(--primary-clr);
+}
+
+body.dark header.sticky #portNav .navbar-brand,
+body.dark header.sticky .navbar-nav .nav-link {
+  color: var(--white);
+}
+
+/* *BANNER* */
+
+body.dark .shape path {
+  fill: var(--cinder-400);
+  transition: all 0.5s;
+}
+
+body.dark .control {
+  background-color: var(--cinder-400);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.12);
+  border: 1px solid #565454;
+  transition: all 0.5s;
+}
+
+body.dark .icon-fa {
+  color: var(--white);
+  transition: all 0.5s;
+}
+
+/* *ABOUT US* */
+
+.dark#myBody .about {
+  background-color: #151421;
+}
+
+body.dark #about .title-big,
+body.dark #about a {
+  color: var(--white);
+}
+
+body.dark #about .about_content p,
+body.dark #challenge .challenge__content p:last-of-type {
+  color: var(--dusty-gray);
+}
+
+/* *CHALLENGE* */
+
+.dark#myBody .challenge {
+  background-color: #100f19;
+}
+
+.dark#myBody .challenge__right .challenge__item {
+  background-color: #181723;
+}
+
+.dark#myBody .challenge__item h4 {
+  color: #fff;
+}
+
+body.dark .challenge {
+  background-color: var(--cinder-500);
+}
+
+body.dark #challenge .challenge__item {
+  background-color: var(--cinder-400);
+}
+
+body.dark #challenge .challenge__item .title__head {
+  color: var(--white);
+}
+
+/* *SERVICES* */
+
+body.dark .services .card .services_img::after {
+  background-color: var(--cinder-500);
+  color: var(--white);
+}
+
+body.dark .services .card button {
+  color: var(--white);
+}
+
+body.dark .services .card button:hover {
+  color: var(--primary-clr);
+}
+
+body.dark .services .card .services_img:hover::after {
+  color: var(--primary-clr);
+}
+
+/* *GALLERY* */

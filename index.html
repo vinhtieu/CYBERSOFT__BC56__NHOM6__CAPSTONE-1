@@ -18,6 +18,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- FONT AWESOME 6 -->
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -47,8 +50,33 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <!-- OWL CAROUSEL 2 -->
+    <link rel="stylesheet" href="./asset\css\owl.carousel.min.css" />
+    <link rel="stylesheet" href="./asset\css\owl.theme.default.min.css" />
     <!-- LIGHTBOX 2 -->
     <link rel="stylesheet" href="./asset/css/lightbox.min.css" />
+    <!-- FOOTER CSS -->
+    <link rel="stylesheet" href="./asset\css\form.css" />
+    <!-- NEWS CSS -->
+    <link rel="stylesheet" href="./asset\css\news.css" />
+    <!-- FEEDBACK CSS -->
+    <link rel="stylesheet" href="./asset\css\feedback.css" />
+    <!-- STATS CSS -->
+    <link rel="stylesheet" href="./asset/css/stats.css" />
+    <!-- GALLERY CSS -->
+    <link rel="stylesheet" href="./asset/css/gallery.css" />
+    <!-- SERVICES CSS -->
+    <link rel="stylesheet" href="./asset/css/services.css" />
+    <!-- CHALLENGES CSS -->
+    <link rel="stylesheet" href="./asset/css/challenge.css" />
+    <!-- ABOUT US CSS -->
+    <link rel="stylesheet" href="./asset/css/about-us.css" />
+    <!-- BANNER CSS -->
+    <link rel="stylesheet" href="./asset/css/banner.css" />
+    <!-- HEADER CSS -->
+    <link rel="stylesheet" href="./asset/css/header.css" />
+    <!-- DARK MODE CSS -->
+    <link rel="stylesheet" href="./asset/css/dark-mode.css" />
     <!-- MY CSS -->
     <link rel="stylesheet" href="./asset/css/style.css" />
     <title>
@@ -121,7 +149,6 @@
                 <a class="nav-link" href="#">contact</a>
               </li>
             </ul>
-            <!-- search -->
             <div id="btn-searchcr">
               <div class="btn-search" id="search-button">
                 <div class="btn-search__background">
@@ -136,11 +163,6 @@
                   placeholder="Start Typing"
                 />
                 <i class="close-icon fa fa-times"></i>
-
-                <!-- <div class="container">
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                    <div class=""></div>
-                  </div> -->
               </div>
 
               <div id="switchButton" title="Click to switch theme">
@@ -493,7 +515,7 @@
                 data-lightbox="roadtrip"
                 data-title="Project 1"
               >
-                <div class="overlay">
+                <div class="overlay-gallery">
                   <div class="overlay__content">
                     <h3 class="overlay__title">Project 1</h3>
                     <p class="overlay__desc">
@@ -515,7 +537,7 @@
                 data-lightbox="roadtrip"
                 data-title="Project 2"
               >
-                <div class="overlay">
+                <div class="overlay-gallery">
                   <div class="overlay__content">
                     <h3 class="overlay__title">Project 2</h3>
                     <p class="overlay__desc">
@@ -537,7 +559,7 @@
                 data-lightbox="roadtrip"
                 data-title="Project 3"
               >
-                <div class="overlay">
+                <div class="overlay-gallery">
                   <div class="overlay__content">
                     <h3 class="overlay__title">Project 3</h3>
                     <p class="overlay__desc">
@@ -559,7 +581,7 @@
                 data-lightbox="roadtrip"
                 data-title="Project 4"
               >
-                <div class="overlay">
+                <div class="overlay-gallery">
                   <div class="overlay__content">
                     <h3 class="overlay__title">Project 4</h3>
                     <p class="overlay__desc">
@@ -581,7 +603,7 @@
                 data-lightbox="roadtrip"
                 data-title="Project 5"
               >
-                <div class="overlay">
+                <div class="overlay-gallery">
                   <div class="overlay__content">
                     <h3 class="overlay__title">Project 5</h3>
                     <p class="overlay__desc">
@@ -602,7 +624,7 @@
                 data-lightbox="roadtrip"
                 data-title="Project 6"
               >
-                <div class="overlay">
+                <div class="overlay-gallery">
                   <div class="overlay__content">
                     <h3 class="overlay__title">Project 6</h3>
                     <p class="overlay__desc">
@@ -637,30 +659,361 @@
               <img class="img-fluid" src="./asset/img/logo-5.png" alt="" />
             </div>
           </div>
-          <!-- <img class="col-2" src="./asset/img/logo-1.png" alt="" />
-            <img class="col-2" src="./asset/img/logo-2.png" alt="" />
-            <img class="col-2" src="./asset/img/logo-3.png" alt="" />
-            <img class="col-2" src="./asset/img/logo-4.png" alt="" />
-            <img class="col-2" src="./asset/img/logo-5.png" alt="" /> -->
         </div>
       </div>
     </section>
     <!-- STATS -->
-    <section class="stats"></section>
+    <section class="stats">
+      <div class="container py-lg-5 py-md-4 py-2">
+        <div class="row">
+          <figure class="stats__img col-md-12 col-lg-6">
+            <img
+              class="img-fluid"
+              src="./asset\img\stats__thumbnail.jpg"
+              alt=""
+            />
+          </figure>
+          <div class="stats__table col-md-12 col-lg-6 mt-lg-0 mt-md-5 mt-4">
+            <div class="subtitle">YOUR SUCCESS IS OUR SUCCESS</div>
+            <div class="title mb-4 pb-lg-2">
+              Web design, marketing & SEO solutions that get results
+            </div>
+            <div class="stats__data">
+              <div class="stats__subject stats__subject--marketing">
+                <span class="subject"
+                  >Marketing
+                  <span>80%</span>
+                </span>
+                <div class="progress-bar">
+                  <div class="progress-bar__background"></div>
+                  <div
+                    class="progress-bar__indicator progress-bar__indicator--80"
+                  ></div>
+                </div>
+              </div>
+              <div class="stats__subject stats__subject--responsive-web-design">
+                <span class="subject"
+                  >Responsive Web Design
+                  <span>95%</span>
+                </span>
+                <div class="progress-bar">
+                  <div class="progress-bar__background"></div>
+                  <div
+                    class="progress-bar__indicator progress-bar__indicator--95"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="stats__subject stats__subject--analytics">
+                <span class="subject"
+                  >Analytics
+                  <span>60%</span>
+                </span>
+                <div class="progress-bar">
+                  <div class="progress-bar__background"></div>
+                  <div
+                    class="progress-bar__indicator progress-bar__indicator--60"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="stats__subject stats__subject--web-development">
+                <span class="subject">Web Development <span>85%</span></span>
+                <div class="progress-bar">
+                  <div class="progress-bar__background"></div>
+                  <div
+                    class="progress-bar__indicator progress-bar__indicator--85"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- FEEDBACK -->
-    <section class="feedback"></section>
+    <section class="feedback">
+      <div class="container pt-lg-4 py-md-3 py-2">
+        <div class="subtitle">HAPPY CLIENTS FEEDBACK</div>
+        <div class="title">Reviews and Testimonials</div>
+
+        <div class="owl-carousel owl-theme">
+          <div class="owl-carousel__item">
+            <div class="container-inner">
+              <p>
+                Lorem ipsum dolor sit amet elit. Velit beatae laudantium
+                voluptate rem ullam dolore nisi voluptatibus esse quasi,
+                doloribus tempora. Dolores molestias adipisci dolo amet!.
+              </p>
+              <div class="user">
+                <figure class="user__avatar">
+                  <img
+                    src="./asset/img/testimonial__avatar-1.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </figure>
+                <div class="user__info">
+                  <span>John wilson</span>
+                  <span>Student</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="owl-carousel__item">
+            <div class="container-inner">
+              <p>
+                Lorem ipsum dolor sit amet elit. Velit beatae laudantium
+                voluptate rem ullam dolore nisi voluptatibus esse quasi,
+                doloribus tempora. Dolores molestias adipisci dolo amet!.
+              </p>
+              <div class="user">
+                <figure class="user__avatar">
+                  <img src="./asset/img/testimonial__avatar-2.jpg" alt="" />
+                </figure>
+                <div class="user__info">
+                  <span>Smith Johnson</span>
+                  <span>Student</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="owl-carousel__item">
+            <div class="container-inner">
+              <p>
+                Lorem ipsum dolor sit amet elit. Velit beatae laudantium
+                voluptate rem ullam dolore nisi voluptatibus esse quasi,
+                doloribus tempora. Dolores molestias adipisci dolo amet!.
+              </p>
+              <div class="user">
+                <figure class="user__avatar">
+                  <img
+                    src="./asset/img/testimonial__avatar-3.jpg"
+                    alt=""
+                    class="user__avatar"
+                  />
+                </figure>
+                <div class="user__info">
+                  <span>Roy Linderson</span>
+                  <span>Student</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="owl-carousel__item">
+            <div class="container-inner">
+              <p>
+                Lorem ipsum dolor sit amet elit. Velit beatae laudantium
+                voluptate rem ullam dolore nisi voluptatibus esse quasi,
+                doloribus tempora. Dolores molestias adipisci dolo amet!.
+              </p>
+              <div class="user">
+                <figure class="user__avatar">
+                  <img src="./asset/img/testimonial__avatar-3.jpg" alt="" />
+                </figure>
+                <div class="user__info">
+                  <span>Smith Johnson</span>
+                  <span>Student</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- NEWS -->
-    <section class="news"></section>
+    <section class="news">
+      <div class="container">
+        <div class="subtitle">LATEST NEWS</div>
+        <div class="title">Our insight and articles</div>
+        <div class="cards row">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+              <figure class="card__header">
+                <img class="img-fluid" src="./asset/img/news__bg-1.jpg" />
+              </figure>
+              <div class="card__body">
+                <div class="card__subtitle">Startup Business</div>
+                <div class="card__title">Hello World!</div>
+              </div>
+              <div class="card__footer">
+                <img src="./asset\img\w3-layout-logo.jpeg" class="card__logo" />
+                <div class="card__text">
+                  <span>by</span>
+                  <a>W3Layouts</a>
+                </div>
+                <div class="card__date">
+                  <span>April 1, 2021</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+              <figure class="card__header">
+                <img class="img-fluid" src="./asset/img/news__bg-2.jpg" />
+              </figure>
+              <div class="card__body">
+                <h4 class="card__subtitle">Startup Business</h4>
+                <a href="">
+                  <h3 class="card__title">
+                    Companies in NY launched a joint project on a three-tower
+                    hall
+                  </h3>
+                </a>
+              </div>
+              <div class="card__footer">
+                <img src="./asset/img/w3-layout-logo.jpeg" class="card__logo" />
+                <div class="card__text">
+                  <span>by</span>
+                  <a>W3Layouts</a>
+                </div>
+                <div class="card__date">
+                  <span>April 1, 2021</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+              <figure class="card__header">
+                <img class="img-fluid" src="./asset/img/news__bg-3.jpg" />
+              </figure>
+              <div class="card__body">
+                <div class="card__subtitle">Marketing Strategy</div>
+                <div class="card__title">
+                  Design breakthrough upgrades the product and ready to launch
+                </div>
+              </div>
+              <div class="card__footer">
+                <img src="./asset\img\w3-layout-logo.jpeg" class="card__logo" />
+                <div class="card__text">
+                  <span>by</span>
+                  <a>W3Layouts</a>
+                </div>
+                <div class="card__date">
+                  <span>April 1, 2021</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- FOOTER -->
     <footer>
       <!-- FORM -->
-      <section class="form"></section>
+      <section class="form">
+        <div class="container py-md-5 py-sm-4 py-2">
+          <div class="container-inner">
+            <div class="form__desc">
+              <h3 class="form__title">Let’s find out how to work together</h3>
+              <p class="text pe-lg-5">
+                Lorem ipsum dolor sit amet elit. Velit beatae rem ullam dolore
+                nisi esse quasi, sit amet. Lorem ipsum dolor sit amet elit.
+              </p>
+            </div>
+            <form action class="subscribe">
+              <div class="subscribe__icon">
+                <span class="fa fa-paper-plane"></span>
+              </div>
+              <input type="text" placeholder="Your Email Address" />
+              <button class="btn btn-primary">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </section>
       <!-- SITEMAP -->
-      <section class="sitemap"></section>
+      <section class="sitemap">
+        <div class="container">
+          <div class="row">
+            <div class="item item-1 col-sm-12 col-md-6 col-lg-4">
+              <a class="corp-vision-logo">
+                <i class="fas fa-align-right logo-icon"></i>
+                Corp Vision
+                <span class="logo-text">Vision to your Future</span>
+              </a>
+              <p>
+                Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+                ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit
+                amet Semper at elit team advisors.
+              </p>
+              <div class="sitemap__social">
+                <a href="#!" class="facebook-logo">
+                  <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, id.</p> -->
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#!" class="twitter-logo">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#!" class="instagram-logo">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#!" class="linkedin-logo">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+            <div
+              class="item item-2 col-sm-12 col-md-6 col-lg-4 pr-lg-5 mt-md-0 mt-5"
+            >
+              <div class="sitemap__header">CONTACT INFO</div>
+              <ul class="list">
+                <li class="list__item mb-2">
+                  <a href="">
+                    Address : Corp Vision, 343 marketing, #21 cravel 1st lane
+                    street, NY - 62617.
+                  </a>
+                </li>
+                <li class="list__item mb-2">
+                  <a href="">Phone Number : +1(21) 234 4567</a>
+                </li>
+                <li class="list__item mb-2">
+                  <a href="">Email : info@example.com</a>
+                </li>
+                <li class="list__item mb-2">
+                  <a href="">Support : info@support.com</a>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="item item-3 col-6 col-sm-5 col-md-6 col-lg-2 mt-lg-0 mt-5"
+            >
+              <div class="sitemap__header">CATAGORIES</div>
+              <ul class="list">
+                <li class="list__item"><a href="">Marketing Strategy</a></li>
+                <li class="list__item"><a href="">Startup Business</a></li>
+                <li class="list__item"><a href="">Web Development</a></li>
+                <li class="list__item"><a href=""></a></li>
+              </ul>
+            </div>
+            <div
+              class="item item-4 col-6 col-sm-5 col-md-6 col-lg-2 mt-lg-0 mt-5"
+            >
+              <div class="sitemap__header">META</div>
+              <ul class="list">
+                <li class="list__item"><a href="">Log in</a></li>
+                <li class="list__item"><a href="">Entries feed</a></li>
+                <li class="list__item"><a href="">Comments feed</a></li>
+                <li class="list__item"><a href="">WordPress.org</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- COPYRIGHT -->
-      <section class="copyright"></section>
+      <section class="copyright">
+        <div class="container">
+          <p>
+            © 2023 Corp Vision All Rights Reserved | WordPress Theme by
+            <span>W3Layouts.</span>
+          </p>
+        </div>
+      </section>
     </footer>
 
+    <!-- BACK TO TOP -->
+    <a href="#" class="cd-top text-replace js-cd-top"></a>
     <!-- JQUERY -->
     <script
       src="https://code.jquery.com/jquery-3.7.0.min.js"
@@ -703,9 +1056,33 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- OWL CAROUSEL -->
+    <script src="./asset/js/owl.carousel.min.js"></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 1,
+          },
+          1000: {
+            items: 1,
+          },
+        },
+      });
+    </script>
+
     <!-- LIGHTBOX 2 -->
     <script src="./asset/js/lightbox.min.js"></script>
+    <!-- BACK TO TOP -->
+    <script src="./asset/js/back-to-top/back-to-top.js"></script>
+    <script src="./asset/js/back-to-top/util.js"></script>
     <!-- JS -->
-    <script src="asset/js/main.js"></script>
+    <script src="./asset/js/main.js"></script>
   </body>
 </html>
