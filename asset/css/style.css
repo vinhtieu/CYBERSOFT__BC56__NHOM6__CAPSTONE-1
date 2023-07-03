@@ -188,6 +188,7 @@ p {
 
   body.showmenu header {
     background: rgba(0, 0, 0, 0.7);
+    height:auto;
   }
 
   .navbar-expand-lg .navbar-collapse {
