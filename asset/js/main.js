@@ -16,6 +16,7 @@ switch_mode.addEventListener("click", () => {
 });
 
 function showmenu() {
+  var primenu = document.getElementById("primary-menu");
   if (body.classList.toggle("showmenu")) {
     body.classList.add("showmenu");
     // không cho scroll khi mở menu ở media 992px
@@ -23,12 +24,16 @@ function showmenu() {
       overflow: "hidden",
       height: "auto",
     });
+    primenu.classList.toggle("animate__fadeInDown");
+    primenu.classList.add("animate__fadeInDown");
   } else {
     // cho phép scroll khi tắt menu
     $("html, body").css({
       overflow: "auto",
       height: "auto",
     });
+    primenu.classList.toggle("animate__fadeInDown");
+    primenu.classList.add("animate__fadeInDown");
   }
 }
 
