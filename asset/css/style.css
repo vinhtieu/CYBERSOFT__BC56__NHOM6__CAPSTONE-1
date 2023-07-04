@@ -126,6 +126,7 @@ p {
   color: var(--text-color);
   opacity: 0.8;
 }
+
 /*
 .btn-primary {
   color: var(--white);
@@ -194,10 +195,19 @@ p {
     top: 30px;
   }
 
+  /* header {
+    height: auto;
+  } */
+
   body.showmenu header {
     background: rgba(0, 0, 0, 0.7);
     height: auto;
   }
+
+  body.showmenu header.sticky .navbar-cl {
+    padding-top: 20px;
+  }
+
 
   .navbar-expand-lg .navbar-collapse {
     display: flex;
@@ -279,18 +289,18 @@ p {
     align-items: center;
   }
 
-  header.sicky .navbar-nav .active > .nav-link,
+  header.sicky .navbar-nav .active>.nav-link,
   header.sicky .navbar-nav .nav-link,
   header.sicky .navbar-nav .nav-link.show,
-  header.sicky .navbar-nav .show > .nav-link {
+  header.sicky .navbar-nav .show>.nav-link {
     color: var(--cinder-400);
     text-align: center;
   }
 
-  .navbar-nav .active > .nav-link,
+  .navbar-nav .active>.nav-link,
   .navbar-nav .nav-link,
   .navbar-nav .nav-link.show,
-  .navbar-nav .show > .nav-link {
+  .navbar-nav .show>.nav-link {
     text-align: center;
   }
 
@@ -298,11 +308,11 @@ p {
     color: var(--primary-clr);
   }
 
-  .navbar-nav .active > .nav-link {
+  .navbar-nav .active>.nav-link {
     color: var(--primary-clr);
   }
 
-  header.sticky .navbar-nav > .nav-link {
+  header.sticky .navbar-nav>.nav-link {
     color: var(--primary-clr);
   }
 
@@ -323,6 +333,7 @@ p {
     display: flex;
     align-items: center;
     position: absolute;
+    top: 30px;
     top: 30px;
     right: 66px;
     transition: all 0.5s;
@@ -457,6 +468,7 @@ p {
 }
 
 @media screen and (max-width: 575.98px) {
+
   /* services */
   .services .row {
     /* height: 1530px; */
@@ -522,6 +534,23 @@ p {
   .about {
     margin: 300px 0;
   }
+
+  #challenge .challenge__gird {
+    grid-gap: 15px;
+  }
+}
+
+@media (max-width: 320px) {
+  #challenge .challenge__gird {
+    display: block;
+  }
+}
+
+@media (max-width: 440px) {
+  #challenge .challenge__gird {
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+  }
 }
 
 @media (max-width: 317px) {
@@ -586,5 +615,13 @@ p {
 @media (min-width: 1280px) {
   .content h1 {
     font-size: 65px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .shape svg {
+    width: 100%;
+    bottom: -72px;
+    position: relative;
   }
 }
