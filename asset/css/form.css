@@ -252,7 +252,7 @@ footer {
   align-items: center;
   justify-content: center;
   visibility: hidden;
-  background: url(/asset/img/cd-top-arrow.svg) no-repeat center 50%
+  background: url(../img/cd-top-arrow.svg) no-repeat center 50%
     var(--primary-clr);
   opacity: 0;
   transition: opacity 0.3s, visibility 0.3s, background-color 0.3s;
