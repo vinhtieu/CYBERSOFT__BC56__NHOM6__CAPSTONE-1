@@ -48,6 +48,10 @@ header {
   padding: 0;
 }
 
+.navbar-brand:hover {
+  color: white;
+}
+
 .navbar-brand {
   font-size: 32px;
   font-weight: bold;
@@ -326,9 +330,10 @@ header.sticky {
   height: 80px;
   border: none;
   transition: all 0.5s ease 0s;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.12);
 }
 
-header.sticky .navbar-nav .active > .nav-link {
+header.sticky .navbar-nav .active>.nav-link {
   color: var(--primary-clr);
 }
 
@@ -336,7 +341,6 @@ header.sticky .navbar {
   display: flex;
   justify-content: center;
   align-items: stretch;
-  /* margin-top: -10px; */
   transition: all 0.5s;
 }
 
