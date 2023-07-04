@@ -440,7 +440,7 @@ p {
   /* services */
   .services .row {
     height: 1530px;
-    width: 510px;
+    max-width: 510px;
   }
 
   .services .card#last_card {
