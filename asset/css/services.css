@@ -42,7 +42,7 @@
 }
 
 .services .row {
-  width: calc(400px * 3);
+  max-width: calc(400px * 3);
   position: relative;
 }
 
